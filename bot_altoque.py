@@ -4,9 +4,15 @@ import time
 import os
 
 account_sid = 'AC1cd2055846af6f85d22d33607806b3fd'
+<<<<<<< HEAD
 auth_token = 'REPLACE_ME'
 twilio_number = 'whatsapp:+14155238886'
 my_number = 'whatsapp:+51XXXXXXX'
+=======
+auth_token = '0119bd9a46cf46cda3c26972cb289722'
+twilio_number = 'whatsapp:+14155238886'
+my_number = 'whatsapp:+51901359596'
+>>>>>>> parent of 0dafd87 (Delete bot_altoque.py)
 url = 'https://www.ejemplo.com/pagina'
 
 archivo_guardado = 'contenido_anterior.txt'
