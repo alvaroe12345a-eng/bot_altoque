@@ -1,5 +1,9 @@
 import socket
 import threading
+import requests
+import time
+from twilio.rest import Client
+import os
 
 def dummy_server():
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -11,14 +15,10 @@ def dummy_server():
 
 threading.Thread(target=dummy_server, daemon=True).start()
 
-import requests
-import time
-from twilio.rest import Client
-
-account_sid = os.environ.get('TWILIO_ACCOUNT_SID')
-auth_token = os.environ.get('TWILIO_AUTH_TOKEN')
-twilio_number = os.environ.get('TWILIO_NUMBER')
-my_number = os.environ.get('MY_NUMBER')
+account_sid = 'ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'
+auth_token = 'REPLACE_ME'
+twilio_number = 'whatsapp:+XXXXXXXXXXX'
+my_number = 'whatsapp:+51XXXXXXX'
 url = 'https://www.ejemplo.com/pagina'
 
 archivo_guardado = 'contenido_anterior.txt'
